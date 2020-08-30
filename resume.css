@@ -1,0 +1,303 @@
+.id-1{
+    box-shadow: 0px 0px 2px black;
+    transition: 1s ease;
+    opacity: 0.2;
+    padding:10px;
+    transform:translateY(-400px);
+}
+.id-1.id-2{
+opacity:1;
+box-shadow:0px 0px 4px black;
+transform:translateY(000px);
+height:50px;
+}
+*{
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    margin:0;
+    padding:0;
+    color:white;
+    background-color: rgb(37, 37, 37);
+    font-family: 'Kalam', cursive;
+}
+.nav{
+    transition: 0.5s ease;
+    transform: translateY(-400px);
+    font-size:20px;
+    text-decoration: none;
+    color:white;
+}
+.nav.nav1{
+    transform:translateY(0);
+    margin:0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-size:20px;
+    flex-direction: row;
+    width:100%;
+    background-color: chocolate;
+    opacity: 1;
+}
+.nav.nav1>a{
+    display: inline-block;
+    text-decoration: none;
+    padding:10px;
+    text-align: center;
+    width: 25%;
+    color:white;
+    transition: 0.4s ease all;
+    background-color: rgb(34, 34, 34);
+    box-shadow: 0px 2px 4px rgb(0, 0, 0),0px 0px 4px black;
+}
+.nav.nav1>a:hover{
+    color:rgb(173, 87, 25);
+    box-shadow: 0px 0px 2px black,0px 2px 2px black ;
+    transform:translateY(10px);
+    background-color: rgb(14, 14, 14);
+}
+header{
+    margin: 0;
+    display: flex;
+    background-color: chocolate;
+    padding:2.5%;
+    font-size: 3vw;
+    font-family: 'Finger Paint', cursive;
+}
+header>div{
+    width:50%;
+    text-align: center;
+    
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px 2px rgb(90, 39, 2);
+    display: block;
+    margin-top: auto;
+  margin-bottom: auto;
+}
+
+header>div>img{
+    box-shadow: 0px 0px 4px rgb(0, 0, 0);
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+}
+#marquee{
+    font-size: 20px;
+    margin:0;
+    padding:0;
+    background-color: rgb(161, 81, 23);
+    box-shadow: inset 0px 0px 4px black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#marquee>span{
+    width: 25%;
+    color: rgba(255, 255, 255, 0);
+    padding-top:5px;
+}
+#marquee>span:nth-child(1){
+    animation: marquee1 4s ease 0s  infinite ;
+
+}
+#marquee>span:nth-child(2){
+    animation: marquee2 4s ease 0s  infinite ;
+
+}
+#marquee>span:nth-child(3){
+    animation: marquee3 4s ease 0s  infinite ;
+
+}
+#marquee>span:nth-child(4){
+    animation: marquee4 4s ease 0s  infinite ;
+
+}
+@keyframes marquee1{
+    25%{
+        color: black;
+        box-shadow:inset 0px 0px 4px black;
+    }
+    
+}@keyframes marquee2{
+    50%{
+        color: black; 
+        box-shadow:inset 0px 0px 4px black;  
+     }
+}@keyframes marquee3{
+    75%{
+        color: black; 
+        box-shadow:inset 0px 0px 4px black;   }
+}
+@keyframes marquee4{
+    100%{
+        color: black; 
+        box-shadow:inset 0px 0px 4px black;   }
+}
+#about{
+    display:flex;
+    text-align: center;
+}
+#about>div{
+    margin:auto 0 auto 0;
+    width:50%;
+    font-size:20px;
+    padding: 10px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+#about>div>h3{
+font-size:30px;
+margin:0;
+padding:0;
+letter-spacing: 0.2em;
+color:rgb(37, 152, 187);
+box-shadow: 0px 4px 4px rgb(0, 255, 234);
+
+}
+#about>div>img{
+    background-color: rgba(17, 218, 218, 0.527);
+    width:100%;
+    box-shadow: inset 0px 2px 4px black,inset 0px -2px 4px black,inset -2px 0px 4px black,inset 2px 0px 4px black;
+    
+}
+#interest{
+    text-align: center;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.interest{
+    background-color: rgb(12, 128, 128);
+    
+    margin:20px;
+    padding:0;
+    width:350px;
+    font-size:24px;
+    letter-spacing: 0.1em;
+    text-shadow:  0px 2px 2px black;
+    box-shadow: inset 0px 2px 4px black,inset 0px -2px 4px black,inset -2px 0px 4px black,inset 2px 0px 4px black;
+}
+.interest>img{
+    display: block;
+    margin: 0 auto 10px auto;
+    box-shadow:  0px 0px 8px black;
+    transition:0.8s ease ;
+    
+}
+.interest:hover{
+    background-color: chocolate;
+}
+h2{
+    text-align: center;
+    box-shadow:inset 0px 2px 4px rgb(0, 0, 0),inset 0px -2px 4px black;
+    text-shadow: 2px 2px 4px black;
+    letter-spacing: 0.1em;
+    background-color: chocolate;
+}
+h2>a{
+    text-decoration: none;
+    color:rgb(27, 3, 3);
+}
+#skills{
+text-align:center;
+display:flex;
+justify-content: center;
+flex-wrap:wrap;
+font-size:20px;
+}
+#skills>p{
+    width: 150px;
+    margin:10px;
+    padding: 10px 15px 10px 15px;
+    border-radius:10px ;
+    background-color: rgb(41, 139, 139);
+    text-shadow: 2px 2px 2px black;
+    box-shadow: inset 0px -2px 4px rgba(0, 0, 0, 0.74),inset -2px 0px 4px rgba(0, 0, 0, 0.705),inset 2px 0px 4px rgba(0, 0, 0, 0.637),inset 0px 2px 4px rgba(0, 0, 0, 0.658);
+    transition:0.4s ease all;
+}
+#skills>p:hover{
+   background-color: chocolate;
+}
+table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    text-align: center;
+    border-collapse: collapse;
+}
+tr{
+    transition:0.4s ease;
+}
+th, td{
+    background-color: rgb(46, 46, 46);
+    padding:10px;
+    box-shadow: inset 0px -2px 4px black;
+    text-shadow: 2px 2px 2px black;
+}
+th{
+    font-size:20px;
+}
+tr:hover{
+    transform: translateY(2px);
+    opacity:0.5;
+}
+#work{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+}
+#work>a{
+    margin:2.5%;
+}
+#contact{
+    display:flex;
+    margin: 0;
+    background-color: rgb(17, 17, 17);
+    padding:20px;
+    box-shadow:0px -2px 4px black;
+}
+ul{
+    list-style-type:none;
+    width:50%;
+
+}
+ul>li>a{
+    text-decoration: none;
+    color:white;
+}
+.a{
+    text-decoration: none;
+    color:white;
+    margin:10px;
+    display: inline-block;
+}
+@media screen and (max-width:600px){
+    #contact{
+        display: block;
+    }
+    ul{
+        width: 100%;
+    }
+    #about{
+        display: block;
+    }
+    #about>div{
+        width:100%;
+    }
+    .nav.nav1{
+        flex-direction:column;
+    }
+    .nav.nav1>a{
+        width:100%;
+    }
+    header{
+        display:block;
+        font-size: 36px;
+    }
+    header>div{
+        width:100%;
+        margin-bottom: 20px;
+    }
+}
